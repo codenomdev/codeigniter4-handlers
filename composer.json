@@ -1,0 +1,38 @@
+{
+	"name": "codenom/handlers",
+	"description": "Cross-module handler registration, for CodeIgniter 4",
+	"keywords": [
+		"codeigniter",
+		"codeigniter4",
+		"handlers",
+		"adapters",
+		"drivers",
+		"modules"
+	],
+	"homepage": "https://github.com/codenomdev/codeigniter4-handlers",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Codenom Dev",
+			"email": "dev@codenom.com",
+			"homepage": "https://codenom.com",
+			"role": "Developer"
+		}
+	],
+	"require": {
+		"php": "^7.0"
+	},
+	"require-dev": {
+		"codeigniter4/framework": "dev-master"
+	},
+	"autoload": {
+		"psr-4": {
+			"Codenom\\Handlers\\": "src"
+		}
+	},
+	"scripts": {
+		"post-update-cmd": [
+			"composer dump-autoload"
+		]
+	}
+}
